@@ -96,7 +96,7 @@ header{
 
 .navbar ul li a{
     color:#fff;
-    font-size:17px;
+    font-size:16px;
     font-weight:600;
     position:relative;
     transition:.3s;
@@ -154,7 +154,7 @@ header{
 }
 
 .hero h1{
-    font-size:78px;
+    font-size:64px;
     line-height:1.15;
     margin-bottom:20px;
     font-weight:800;
@@ -164,7 +164,7 @@ header{
 
     display:inline-block;
 
-    font-size:24px;
+    font-size:20px;
 
     font-weight:700;
 
@@ -196,7 +196,7 @@ header{
 .hero-text{
     color:#b6c5db;
     font-size:20px;
-    line-height:1.9;
+    line-height:1.8;
     margin:30px 0;
 }
 .availability{
@@ -230,9 +230,9 @@ header{
 }
 
 .btn{
-    padding:18px 34px;
+    padding:16px 30px;
     border-radius:50px;
-    font-size:18px;
+    font-size:16px;
     font-weight:600;
     transition:.35s;
     display:flex;
@@ -345,7 +345,7 @@ header{
 }
 
 .section-title h2{
-    font-size:60px;
+    font-size:52px;
     font-weight:800;
 }
 .underline{
@@ -372,7 +372,7 @@ header{
     align-items:center;
 }
 .about-left h3{
-    font-size:42px;
+    font-size:36px;
     margin-bottom:20px;
 }
 
@@ -380,7 +380,7 @@ header{
     color:#b7c3da;
     line-height:1.9;
     margin-bottom:18px;
-    font-size:18px;
+    font-size:17px;
 }
 .about-right{
 
@@ -544,20 +544,17 @@ header{
 
 .project-content h3{
 
-    font-size:28px;
+    font-size:24px;
 
     margin-bottom:15px;
 
 }
 
 .project-content p{
-
     color:#b7c3da;
-
     line-height:1.8;
-
     margin-bottom:25px;
-
+    font-size:16px;
 }
 
 .project-tags{
@@ -807,7 +804,7 @@ header{
 
 .certificate-card h3{
 
-    font-size:24px;
+    font-size:22px;
 
     margin-bottom:12px;
 
@@ -861,7 +858,7 @@ header{
 }
 
 .contact-info h3{
-    font-size:42px;
+    font-size:36px;
     margin-bottom:20px;
 }
 
