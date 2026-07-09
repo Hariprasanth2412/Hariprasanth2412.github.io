@@ -104,11 +104,6 @@ if(backToTop){
     });
 
 }
-
-/* ===========================
-   TYPING EFFECT
-=========================== */
-
 const roles = [
     "Java Full Stack Developer",
     "Web Developer",
@@ -117,44 +112,43 @@ const roles = [
     "IT Student"
 ];
 
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
-
 const typing = document.getElementById("typing");
 
-function typeEffect() {
+let currentRole = 0;
 
-    if (!typing) return;
+function animateRole(){
 
-    const current = roles[roleIndex];
+    if(!typing) return;
 
-    if (!deleting) {
+    typing.classList.add("slide-out");
 
-        typing.textContent = current.substring(0, charIndex++);
-    } else {
+    setTimeout(()=>{
 
-        typing.textContent = current.substring(0, charIndex--);
-    }
+        currentRole = (currentRole + 1) % roles.length;
 
-    let speed = deleting ? 60 : 120;
+        typing.textContent = roles[currentRole];
 
-    if (!deleting && charIndex === current.length + 1) {
+        typing.classList.remove("slide-out");
 
-        deleting = true;
-        speed = 1500;
+        typing.classList.add("slide-in");
 
-    } else if (deleting && charIndex === 0) {
+        setTimeout(()=>{
 
-        deleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-    }
+            typing.classList.remove("slide-in");
 
-    setTimeout(typeEffect, speed);
+        },500);
+
+    },500);
+
 }
 
-typeEffect();
+if(typing){
 
+    typing.textContent = roles[0];
+
+    let roleInterval = setInterval(animateRole,3000);
+
+}
 /* ===========================
    ACTIVE NAVIGATION
 =========================== */
@@ -327,3 +321,39 @@ tsParticles.load("particles-js", {
     }
 
 });
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+document.querySelectorAll(".project-card").forEach(card=>{
+
+    card.classList.add("fade-up");
+
+    observer.observe(card);
+
+});
+
+const cursor = document.getElementById("cursor-glow");
+
+if (cursor) {
+
+    document.addEventListener("mousemove", (e) => {
+
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+
+    });
+
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hari Prasanth N | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <meta name="description" content="Official Portfolio of Hari Prasanth N">
 
@@ -13,7 +14,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -63,16 +64,12 @@
 </header>
 
 <section id="home" class="hero">
-    <div class="hero-bg">
-        <span class="circle c1"></span>
-        <span class="circle c2"></span>
-        <span class="circle c3"></span>
-    </div>
     <div class="hero-left">
 
-        <p class="hero-intro">
-            👋 Hello, I'm
-        </p>
+       <span class="hero-greeting">
+    <i class="fa-regular fa-hand"></i>
+    Hello, I'm
+        </span>
 
         <h1>
             Hari Prasanth N
@@ -81,6 +78,10 @@
         <h2>
             <span id="typing"></span>
         </h2>
+        <p class="hero-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Coimbatore, Tamil Nadu, India
+        </p>
 
         <p class="hero-text">
 
@@ -90,20 +91,26 @@
             HTML, CSS and JavaScript.
 
         </p>
+        <div class="availability">
+            <span class="status-dot"></span>
+            Open to Internship & Full-Time Opportunities
+        </div>
 
         <div class="hero-buttons">
 
-            <a href="assets/resume/Hari_Prasanth_Resume.pdf"
-               class="btn-primary"
+            <a href="resume/Hari_Prasanth_Resume.pdf"
+               class="btn btn-primary"
                download>
 
+                <i class="fas fa-download"></i>
                 Download Resume
 
             </a>
 
             <a href="#projects"
-               class="btn-secondary">
+               class="btn btn-secondary">
 
+                <i class="fas fa-folder-open"></i>
                 View Projects
 
             </a>
@@ -139,6 +146,9 @@
         <img src="assets/images/profile.jpg"
              alt="Hari Prasanth">
 
+    </div>
+    <div class="scroll-down">
+        <span></span>
     </div>
 
 </section>
@@ -386,7 +396,8 @@
         <div class="project-card">
 
             <div class="project-image">
-                <i class="fas fa-robot"></i>
+                <img src="assets/project-images/Ai.png"
+                     alt="AI Gesture Project">
             </div>
 
             <div class="project-content">
@@ -407,12 +418,13 @@
 
                 <div class="project-buttons">
 
-                    <a href="#" class="project-btn disabled">
-                        GitHub
+                    <a href="projects/gesture.html" class="project-btn disabled">
+                        <i class="fab fa-github"></i> GitHub
                     </a>
 
-                    <a href="#" class="project-btn disabled">
-                        Live Demo
+                    <a href="projects/gesture.html" class="project-btn ">
+                        View Details
+                        <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
 
                 </div>
@@ -426,7 +438,8 @@
         <div class="project-card">
 
             <div class="project-image">
-                <i class="fas fa-wallet"></i>
+                <img src="assets/project-images/expense-tracker.png"
+                     alt="Expense Tracker">
             </div>
 
             <div class="project-content">
@@ -447,11 +460,12 @@
                 <div class="project-buttons">
 
                     <a href="#" class="project-btn disabled">
-                        GitHub
+                        <i class="fab fa-github"></i> GitHub
                     </a>
 
                     <a href="#" class="project-btn disabled">
-                        Live Demo
+                        View Details
+                        <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
 
                 </div>
@@ -465,7 +479,8 @@
         <div class="project-card">
 
             <div class="project-image">
-                <i class="fas fa-globe"></i>
+                <img src="assets/project-images/portfolio.png"
+                     alt="Portfolio Website">
             </div>
 
             <div class="project-content">
@@ -486,11 +501,12 @@
                 <div class="project-buttons">
 
                     <a href="#" class="project-btn disabled">
-                        GitHub
+                        <i class="fab fa-github"></i> GitHub
                     </a>
 
                     <a href="#" class="project-btn disabled">
-                        Live Demo
+                        View Details
+                        <i class="fas fa-arrow-up-right-from-square"></i>
                     </a>
 
                 </div>
@@ -539,22 +555,14 @@
 <section id="certificates">
 
     <div class="section-title">
-
         <h2>Certificates</h2>
-
         <div class="underline"></div>
-
     </div>
 
     <div class="certificate-grid">
 
         <div class="certificate-card">
-
-            <div class="certificate-icon">
-
-                🏆
-
-            </div>
+            <div class="certificate-icon">🏆</div>
 
             <h3>NPTEL Cloud Computing</h3>
 
@@ -562,36 +570,28 @@
 
             <a href="certificates/cloud.pdf"
                target="_blank"
-               class="btn">
+               class="certificate-btn">
                 <i class="fas fa-award"></i>
                 View Certificate
             </a>
-
         </div>
 
         <div class="certificate-card">
+            <div class="certificate-icon">🔐</div>
 
-            <div class="certificate-icon">
+            <h3>IoT Workshop</h3>
 
-                🔐
-
-            </div>
-
-            <h3>WorkShop</h3>
-
-            <p>Issued by<br>Anna University</p>
+            <p>Anna University</p>
 
             <a href="certificates/IOT.pdf"
                target="_blank"
-               class="btn">
+               class="certificate-btn">
                 <i class="fas fa-award"></i>
                 View Certificate
             </a>
-
         </div>
 
         <div class="certificate-card">
-
             <div class="certificate-icon">
                 <i class="fas fa-comments"></i>
             </div>
@@ -602,32 +602,25 @@
 
             <a href="certificates/prompt.pdf"
                target="_blank"
-               class="btn">
+               class="certificate-btn">
                 <i class="fas fa-award"></i>
                 View Certificate
             </a>
-
         </div>
 
         <div class="certificate-card">
-
-            <div class="certificate-icon">
-
-                🧠
-
-            </div>
+            <div class="certificate-icon">🤖</div>
 
             <h3>Gen AI Everyone</h3>
 
-            <p>Professional<br>Course</p>
+            <p>Professional Course</p>
 
             <a href="certificates/gen-ai.pdf"
                target="_blank"
-               class="btn">
+               class="certificate-btn">
                 <i class="fas fa-award"></i>
                 View Certificate
             </a>
-
         </div>
 
     </div>
@@ -702,8 +695,8 @@
 </button>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<div id="cursor-glow"></div>
 <script src="js/script.js"></script>
-
 </body>
 
 </html>
